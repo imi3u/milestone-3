@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naturs's Platter</title>
+    <title>Nature's Platter</title>
     <!-- Font initialization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 
     <style>
         .font-sora {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Sora", serif;
         }
         
       </style>
@@ -31,8 +31,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'bike-primary': '#E76F51',
-                'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+               
               },
             },
           },
@@ -40,10 +39,10 @@
       </script>
 </head>
 
-<body>
-    <header class="bg-[#EFEBE3]">
+<body class="font-sora lg:mt-10">
+    <header class="bg-gradient-to-b[#EFEBE3] ">
         <!-- navbar section -->
-        <nav class=" px-5 lg:px-12 ">
+        <nav class=" w-3/4 mx-auto px-5 lg:my-10 ">
             <div class="navbar ">
                 <div class="navbar-start">
                   
@@ -59,26 +58,27 @@
                 
                 <div class="navbar-end space-x-4">
                     <div class="space-x-4">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                         <i class="fa-solid fa-magnifying-glass"></i> 
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
-                    <div>
-                        <a class="btn">Log In</a>
-                    <a class="btn">Register</a>
+                    <div class="space-x-2">
+                        <a class="btn btn-outline px-5 border border-[#179800]">Log In</a>
+                    <a class="btn bg-[#179800] text-white px-5 hover:bg-black">Register</a>
                     </div>
                 </div>
               </div>
         </nav>
+
         <!-- Banner section -->
-         <section class="bg-orange-50 text-center mx-auto w-3/4">
+         <section class=" mt-24 text-center mx-auto w-3/4">
             <div>
                 <div>
-                    <h1 class="font-semibold text-5xl mb-5">
-                        Freshness You Can <br>
-                Count On, Prices You’ll Love!
+                    <h1 class=" line font-semibold text-5xl mb-5">
+                        Freshness <span class="text-[#179800]">You Can <br> Count</span> 
+                 On, Prices You’ll Love!
                     </h1>
                 </div>
-                <div class="mb-5">
+                <div class="mb-5 mt-8">
                     <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
                 </div>
             </div>
@@ -89,56 +89,57 @@
 
          
     </header>
-    <main>
-        <!-- servives section -->
-        <section class="mt-20 w-3/4 mx-auto mb-20">
-            <h2 class="font-semibold text-5xl	mb-5 ">Services</h2>
-            <div class="grid grid-cols-3 space-x-8  ">
-                <div class="bg-slate-300 p-10 rounded-xl">
+
+    <main class="bg-white">
+        <!-- services section -->
+        <section class=" mt-40 w-3/4 mx-auto mb-20 p-10">
+            <h2 class="font-semibold text-5xl text-[#179800]	mb-5 ">Services</h2>
+            <div class="grid grid-cols-1 space-x-4 p-4 lg:grid-cols-3 space-x-8 p-7 ">
+                <div class=" p-10 rounded-xl">
                     <div class="avatar mb-5">
-                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <div class="ring-primary  w-24 rounded-full  ">
+                          <img src="./assets/service.png" />
                         </div>
                       </div>
-                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4 class="font-semibold text-lg my-5">24/7 Services </h4>
+                    <p>We’re available around the clock to assist you anytime, anywhere..</p>
                 </div>
-                <div class="bg-slate-300 p-10 rounded-xl">
+                <div class=" p-10 rounded-xl">
                     <div class="avatar mb-5">
-                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full  ring-offset-2">
+                          <img src="./assets/delivery.png" />
                         </div>
                       </div>
-                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4 class="font-semibold text-lg my-5">Fast Delivery </h4>
+                    <p>Get your orders quickly with our efficient and reliable shipping service.</p>
                 </div>
-                <div class="bg-slate-300 p-10 rounded-xl">
+                <div class=" p-10 rounded-xl">
                     <div class="avatar mb-5">
-                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full  ring-offset-2">
+                          <img src="./assets/healthy.png" />
                         </div>
                       </div>
-                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <h4 class="font-semibold text-lg my-5">Healthy Products  </h4>
+                    <p>Enjoy natural, high-quality products designed for your well-being.</p>
                 </div>
             </div>
          </section>
 
          <!-- Popular Products section -->
-          <section class="w-3/4 mx-auto">
+          <section class="w-3/4 mx-auto m">
             <body class="bg-[#f5f0e8] p-10">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-2xl font-bold text-green-700 mb-6">Popular Products</h2>
-                    <div class="grid grid-cols-4 gap-6">
+                    <h2 class="text-2xl font-bold text-[#179800] mb-6">Popular Products</h2>
+                    <div class="grid grid-cols-1 lg: grid-cols-4 gap-6">
                         <!-- Discount Section -->
                         <div class="col-span-1 bg-gradient-to-r from-green-400 to-green-600 text-white p-6 rounded-lg flex flex-col justify-center">
                             <h3 class="text-2xl font-bold">30% off</h3>
-                            <p class="mt-2 text-sm">Discover a world of treats, toys, and essentials handpicked for you.</p>
+                            <p  class=" text-black mt-2 text-sm">Discover a world of treats, toys, and essentials handpicked for you.</p>
                             <button class="mt-4 btn bg-white text-black font-semibold">Buy Now</button>
                         </div>
                         
                         <!-- Product Cards -->
-                        <div class="col-span-3 grid grid-cols-3 gap-4">
+                        <div class=" col-span-3 grid grid-cols-2 gap-4 lg:grid-cols-3 gap-4">
                             <div class="card bg-white shadow-md p-4 rounded-lg">
                                 <img src="./assets/onion.png" alt="Onion" class="w-16 mx-auto">
                                 <div class="text-center">
@@ -242,29 +243,29 @@
                 </div>
            
             
-           </body>
+            </body>
           </section>
 
           <!-- Arrival & Offers -->
-          <section class="w-3/4 mx-auto my-20 mb-40">
+          <section class="w-3/4 mx-auto  my-60">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Arrival & Offers</h2>
-                <div class="flex gap-4">
+                <h2 class="text-2xl font-bold text-[#179800] mb-6">Arrival & Offers</h2>
+                <div class=" grid lg:flex gap-4">
                     <!-- First Offer Card -->
-                    <div class="bg-green-900 text-white p-6 rounded-lg flex items-center space-x-6 relative w-3/5">
+                    <div class="bg-green-900 text-white p-2 rounded-xl flex items-center space-x-6 relative lg:w-3/5">
                         <div>
                             <img src="./assets/dawat-logo.png" alt="Daawat Logo" class="w-32">
-                            <p class="mt-2 bg-green-500 px-4 py-1 rounded-md inline-block text-sm">Cook Exotic Dishes</p>
+                            <p class="mt-2 bg-green-500 px-4 py-1 rounded-xl inline-block text-sm">Cook Exotic Dishes</p>
                             <p class="mt-2 text-lg font-semibold">UP TO <span class="text-2xl font-bold">20% OFF</span></p>
                         </div>
                         <img src="./assets/dawat-mock-up.png" alt="Daawat Biryani Rice" class="w-32 absolute right-6 bottom-6">
                     </div>
                     
                     <!-- Second Offer Card -->
-                    <div class="bg-blue-900 text-white p-6 rounded-lg flex items-center space-x-6 relative w-2/5">
+                    <div class="bg-blue-900 text-white p-6 rounded-xl flex items-center space-x-6 relative lg:w-2/5">
                         <div>
                             <img src="./assets/india-gate-logo.png" alt="India Gate Logo" class="w-24">
-                            <p class="mt-2 bg-blue-500 px-4 py-1 rounded-md inline-block text-sm">World’s No.1 Rice</p>
+                            <p class="mt-2 bg-blue-500 px-4 py-1 rounded-xl inline-block text-sm">World’s No.1 Rice</p>
                             <p class="mt-2 text-lg font-semibold">UP TO <span class="text-2xl font-bold">40% OFF</span></p>
                         </div>
                         <img src="./assets/india-gate-mock-up.png" alt="India Gate Rice" class="w-32 absolute right-6 bottom-6">
@@ -273,36 +274,37 @@
             </div>
           </section>
 
-          <section>
-            <div class="relative">
+          <section >
+            <div class="relative ">
                 <!-- Subscription Section -->
-                <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 w-3/4 bg-[#EFEBE3] shadow-lg p-8 rounded-lg flex items-center">
+                <div class="absolute -top-40 left-1/2 transform -translate-x-1/2 w-3/4 bg-transparent shadow-lg p-8 rounded-lg flex items-center justify-around">
                     <img src="./assets/vegetable-busket.png" alt="Grocery Basket" class="w-1/3">
                     <div class="ml-6">
                         <h2 class="text-xl font-bold">Get Grocery News!</h2>
                         <p class="text-gray-600">Exclusive training tips, tricks, product deals and more.</p>
                         <div class="mt-4 flex">
                             <input type="email" placeholder="Enter email..." class="input input-bordered w-full max-w-xs">
-                            <button class="btn btn-success ml-2">Subscribe</button>
+                            <button class="btn btn-success border border-2 bg-[#5ead4fc8] text-white ml-2">Subscribe</button>
                         </div>
                     </div>
                 </div>
         
                 <!-- Footer Section -->
-                <footer class="bg-green-700 text-white py-16 mt-20 pt-52" >
-                    <div class="max-w-6xl mx-auto flex justify-between">
+                <footer class="bg-[#179800] text-white py-16 mt-20 pt-52" >
+                    <div class="max-w-6xl mx-auto items-center lg:flex lg:justify-between">
                         <div>
-                            <h3 class="text-lg font-bold">nature's platter</h3>
-                            <p class="text-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+                            <img src="./assets/logo-footer.png" alt="">
+                            <p class="text-sm opacity-70 ">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends.</p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold">Product</h3>
-                            <ul class="text-sm">
+                            
+                            <ul class="text-sm text-white opacity-70 space-y-5">
+                                <li>Product</li>
                                 <li>Services</li>
                                 <li>Contact us</li>
                             </ul>
                         </div>
-                        <div>
+                        <div class="opacity-70">
                             <h3 class="text-lg font-bold">Follow Us</h3>
                             <div class="flex space-x-4 mt-2">
                                 <span class="bg-white p-2 rounded-full"><i class="fab fa-facebook text-green-700"></i></span>
@@ -319,9 +321,7 @@
           </section>
 
     </main>
-    <footer>
-
-    </footer>
+    
     
 </body>
 </html>
