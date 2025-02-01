@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturs's Platter</title>
+    <!-- Font initialization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <script
+    src="https://kit.fontawesome.com/bbfc4be646.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <style>
+        .font-sora {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+      </style>
+      <!-- for customized class -->
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#E76F51',
+                'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+              },
+            },
+          },
+        }
+      </script>
+</head>
+
+<body>
+    <header class="bg-[#EFEBE3]">
+        <!-- navbar section -->
+        <nav class=" px-5 lg:px-12 ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                  
+                 <img src="./assets/logo-header.png" alt="logo">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>                  
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                
+                <div class="navbar-end space-x-4">
+                    <div class="space-x-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <a class="btn">Log In</a>
+                    <a class="btn">Register</a>
+                    </div>
+                </div>
+              </div>
+        </nav>
+        <!-- Banner section -->
+         <section class="bg-orange-50 text-center mx-auto w-3/4">
+            <div>
+                <div>
+                    <h1 class="font-semibold text-5xl mb-5">
+                        Freshness You Can <br>
+                Count On, Prices You’ll Love!
+                    </h1>
+                </div>
+                <div class="mb-5">
+                    <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+                </div>
+            </div>
+            <div class="text-center " >
+                <img class="justify-center" width="1030px" src="./assets/hero-vegetables.png" alt="">
+            </div>
+         </section>
+
+         
+    </header>
+    <main>
+        <!-- servives section -->
+        <section class="mt-20 w-3/4 mx-auto mb-20">
+            <h2 class="font-semibold text-5xl	mb-5 ">Services</h2>
+            <div class="grid grid-cols-3 space-x-8  ">
+                <div class="bg-slate-300 p-10 rounded-xl">
+                    <div class="avatar mb-5">
+                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        </div>
+                      </div>
+                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-slate-300 p-10 rounded-xl">
+                    <div class="avatar mb-5">
+                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        </div>
+                      </div>
+                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-slate-300 p-10 rounded-xl">
+                    <div class="avatar mb-5">
+                        <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        </div>
+                      </div>
+                    <h4 class="font-semibold text-lg mb-5">24/7 Services </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+         </section>
+
+         <!-- Popular Products section -->
+          <section class="w-3/4 mx-auto">
+            <body class="bg-[#f5f0e8] p-10">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-2xl font-bold text-green-700 mb-6">Popular Products</h2>
+                    <div class="grid grid-cols-4 gap-6">
+                        <!-- Discount Section -->
+                        <div class="col-span-1 bg-gradient-to-r from-green-400 to-green-600 text-white p-6 rounded-lg flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold">30% off</h3>
+                            <p class="mt-2 text-sm">Discover a world of treats, toys, and essentials handpicked for you.</p>
+                            <button class="mt-4 btn bg-white text-black font-semibold">Buy Now</button>
+                        </div>
+                        
+                        <!-- Product Cards -->
+                        <div class="col-span-3 grid grid-cols-3 gap-4">
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/onion.png" alt="Onion" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/tomato.png" alt="Tomato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Tomato 500 g</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/potato.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/tomato.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/potato.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/onion.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/potato.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/tomato.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white shadow-md p-4 rounded-lg">
+                                <img src="./assets/onion.png" alt="Potato" class="w-16 mx-auto">
+                                <div class="text-center">
+                                    <div class="rating">
+                                        <span class="text-yellow-400">&#9733;</span> 4.5
+                                    </div>
+                                    <h4 class="text-lg font-semibold">Potato 1 KG</h4>
+                                    <p class="text-gray-600">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            
+           </body>
+          </section>
+
+          <!-- Arrival & Offers -->
+          <section class="w-3/4 mx-auto my-20 mb-40">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">Arrival & Offers</h2>
+                <div class="flex gap-4">
+                    <!-- First Offer Card -->
+                    <div class="bg-green-900 text-white p-6 rounded-lg flex items-center space-x-6 relative w-3/5">
+                        <div>
+                            <img src="./assets/dawat-logo.png" alt="Daawat Logo" class="w-32">
+                            <p class="mt-2 bg-green-500 px-4 py-1 rounded-md inline-block text-sm">Cook Exotic Dishes</p>
+                            <p class="mt-2 text-lg font-semibold">UP TO <span class="text-2xl font-bold">20% OFF</span></p>
+                        </div>
+                        <img src="./assets/dawat-mock-up.png" alt="Daawat Biryani Rice" class="w-32 absolute right-6 bottom-6">
+                    </div>
+                    
+                    <!-- Second Offer Card -->
+                    <div class="bg-blue-900 text-white p-6 rounded-lg flex items-center space-x-6 relative w-2/5">
+                        <div>
+                            <img src="./assets/india-gate-logo.png" alt="India Gate Logo" class="w-24">
+                            <p class="mt-2 bg-blue-500 px-4 py-1 rounded-md inline-block text-sm">World’s No.1 Rice</p>
+                            <p class="mt-2 text-lg font-semibold">UP TO <span class="text-2xl font-bold">40% OFF</span></p>
+                        </div>
+                        <img src="./assets/india-gate-mock-up.png" alt="India Gate Rice" class="w-32 absolute right-6 bottom-6">
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="relative">
+                <!-- Subscription Section -->
+                <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 w-3/4 bg-[#EFEBE3] shadow-lg p-8 rounded-lg flex items-center">
+                    <img src="./assets/vegetable-busket.png" alt="Grocery Basket" class="w-1/3">
+                    <div class="ml-6">
+                        <h2 class="text-xl font-bold">Get Grocery News!</h2>
+                        <p class="text-gray-600">Exclusive training tips, tricks, product deals and more.</p>
+                        <div class="mt-4 flex">
+                            <input type="email" placeholder="Enter email..." class="input input-bordered w-full max-w-xs">
+                            <button class="btn btn-success ml-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer Section -->
+                <footer class="bg-green-700 text-white py-16 mt-20 pt-52" >
+                    <div class="max-w-6xl mx-auto flex justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold">nature's platter</h3>
+                            <p class="text-sm">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Product</h3>
+                            <ul class="text-sm">
+                                <li>Services</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Follow Us</h3>
+                            <div class="flex space-x-4 mt-2">
+                                <span class="bg-white p-2 rounded-full"><i class="fab fa-facebook text-green-700"></i></span>
+                                <span class="bg-white p-2 rounded-full"><i class="fab fa-instagram text-green-700"></i></span>
+                                <span class="bg-white p-2 rounded-full"><i class="fab fa-linkedin text-green-700"></i></span>
+                                <span class="bg-white p-2 rounded-full"><i class="fab fa-youtube text-green-700"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+          
+            
+          </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
